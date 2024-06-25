@@ -77,18 +77,24 @@ pip install pandas numpy matplotlib scikit-learn statsmodels
 
 - The Isolation Forest algorithm detected several anomalies in the power generation data. These anomalies were visualized on the time series plot.
 - The anomalies were further analyzed to understand their distribution over time.
+![download(5)](https://github.com/sirisaacnewton540/PV_Live-Dataset-Anomaly-Detection-and-Time-Series-Analysis/assets/58942453/984bbedf-d5dd-4039-b8d2-dc107d57cbd2)
+![download(4)](https://github.com/sirisaacnewton540/PV_Live-Dataset-Anomaly-Detection-and-Time-Series-Analysis/assets/58942453/4ba1cf9f-5579-45b3-8b70-e64e1e15bcba)
 
 ### Fault Diagnosis
 
 - The anomalies were found to occur more frequently at certain times of the day, suggesting potential issues with PV systems during those periods.
 - This information can be used to schedule maintenance or investigate potential causes of anomalies.
+![download(3)](https://github.com/sirisaacnewton540/PV_Live-Dataset-Anomaly-Detection-and-Time-Series-Analysis/assets/58942453/099b2c04-f1b1-417e-bb92-bb14600411a9)
 
 ### Time Series Analysis
 
 - The time series decomposition showed clear trends and seasonality in the PV power generation data.
 - The SARIMAX model was trained on the dataset and used to forecast future power generation values. The forecasted values can help in predictive maintenance and planning.
+![download(2)](https://github.com/sirisaacnewton540/PV_Live-Dataset-Anomaly-Detection-and-Time-Series-Analysis/assets/58942453/b56ddbba-e1a2-432b-8814-eb96a91c7ed1)
 
 ### SARIMAX Model Results Explanation
+![download(1)](https://github.com/sirisaacnewton540/PV_Live-Dataset-Anomaly-Detection-and-Time-Series-Analysis/assets/58942453/c01b05b5-7eeb-41e5-bbbd-a0b218307612)
+
 ``` SARIMAX Results                                       
 ============================================================================================
 Dep. Variable:                        generation_mw   No. Observations:                  292
@@ -187,6 +193,7 @@ Warnings:
 ### Summary and Recommendations
 
 These results indicate a SARIMAX model that fits the data reasonably well, capturing both non-seasonal and seasonal dynamics in the electrical power generation data. However, the high condition number of the covariance matrix suggests potential instability in the model estimates, which warrants further investigation or possibly refining the model specification.
+![download(0)](https://github.com/sirisaacnewton540/PV_Live-Dataset-Anomaly-Detection-and-Time-Series-Analysis/assets/58942453/0ecbae59-c5ee-4e25-aa50-9a6de04bccb4)
 
 ## Contributing
 
